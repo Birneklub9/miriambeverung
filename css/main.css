@@ -16,88 +16,71 @@ nav {
     width: 100%;
     height: 60px;
     display: flex;
+    position: relative;
     font-weight: bold;
     font-family: 'Julius Sans One', sans-serif;
-    background-color: whitesmoke;
-    /* font-family: 'Open Sans Condensed', sans-serif; */
-    /* font-family: 'Montserrat', sans-serif; */
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     position: fixed;
     top: 0;
     z-index: 1;
     transition: all ease-in-out 0.4s;
+    background-color: whitesmoke;
 }
-#rr_nav_logo a,
-#rr_nav_menu ul li a,
-#rr_nav_resp_menu ul li a,
-#rr_nav_info ul li a {
-    text-decoration: none;
-    color: #333333;
+.rr_nav_logo {
+    padding: 0 0.5em 0 1em;
 }
-#rr_nav_left {
+.rr_nav_right {
     display: flex;
-    font-size: 1em;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    padding: 0.5em 0 0.5em 1em;
 }
-#rr_nav_burger {
-    display: none;
+.rr_extra_menu {
+    position: absolute;
+    right: 0;
 }
-.rr_nav_burger_stroke {
-    height: 3px;
-    width: 100%;
-    background-color: black;
-}
-#rr_nav_menu ul,
-#rr_nav_resp_menu ul {
-    display: flex;
-    font-size: 0.8em;
-    list-style: none;
-    justify-content: flex-start;
-}
-#rr_nav_menu ul li {
-    margin: 0 0.5em;
-}
-#rr_nav_resp_menu {
-    display: none;
-}
-#rr_nav_right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0.5em 1em 0.5em 0;
-}
-#rr_nav_info {
-    display: none;
-}
-#rr_nav_info ul {
-    /* display: none; */
+.rr_menu ul {
     display: flex;
     list-style: none;
-    justify-content: flex-end;
+    padding: 0;
 }
-#rr_gallery_grid_wrapper {
+.rr_menu_item {
+    padding: 0 0.5em 0 0.5em;
+}
+.rr_extra_menu p {
+    padding: 0 1em 0 0.5em;
+}
+.rr_extra_menu ul {
+    display: none;
+    list-style: none;
+}
+.rr_gallery_grid_list {
+    margin: 0;
+    padding: 0 1em 0 1em;
+    list-style: none;
     display: grid;
-    padding: 0 1em;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
     grid-gap: 1em;
 }
-.rr_gallery_item,
-.rr_gallery_item a {
-    padding: 0;
-    margin: 0;
-}
-.rr_gallery_item a img {
+.rr_gallery_grid_list li {
     width: 100%;
-    min-height: 60vh;
-    max-height: 60vh;
-    object-fit: cover;
-    /* background-size: cover;
-    background-position: center; */
+    /* "padding-top" and "padding-bottom" define the height of the element proportional to the width */
+    /* To position the element inside of the "<li></li>" we have to add "position: relative;" to align
+       The item inside with "position: absolute;" propartly */
+    padding-top: 100%;
+    position: relative;
     overflow: hidden;
+}
+.rr_gallery_grid_list li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    /* needed for "position: absolute;" to work */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 footer {
     font-family: 'Julius Sans One', sans-serif;
@@ -134,17 +117,7 @@ footer p img {
 footer p a {
     color: #333333;
 }
-@media only screen and (max-width: 1000px) {
-    #rr_nav_burger {
-        display: initial;
-    }
-    #rr_nav_right {
-        display: none;
-    }
-    #rr_nav_menu {
-        display: none;
-    }
-}
+@media only screen and (max-width: 1000px) {}
 @media only screen and (max-width: 768px) {
     footer {
         width: 85%;
