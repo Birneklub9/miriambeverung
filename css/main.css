@@ -30,36 +30,65 @@ nav {
 .rr_nav_logo {
     padding: 0 0.5em 0 1em;
 }
+.rr_nav_logo a {
+    color: black;
+    text-decoration: none;
+}
 .rr_nav_right {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.rr_extra_menu {
-    position: absolute;
-    right: 0;
-}
 .rr_menu ul {
-    display: flex;
     list-style: none;
+    display: flex;
     padding: 0;
+}
+.rr_menu ul li a {
+    color: black;
+    text-decoration: none;
 }
 .rr_menu_item {
     padding: 0 0.5em 0 0.5em;
 }
+.rr_extra_menu {
+    position: absolute;
+    right: 0;
+}
 .rr_extra_menu p {
-    padding: 0 1em 0 0.5em;
+    cursor: pointer;
+    padding: 0 2.8em 0 0.5em;
+    margin: 0;
 }
 .rr_extra_menu ul {
-    display: none;
+    background-color: whitesmoke;
+    padding: 20px 1em 0 0.5em;
+    margin: 0;
     list-style: none;
+    position: absolute;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
 }
+.rr_extra_menu:hover > ul {
+    height: 68px;
+}
+.rr_extra_menu_item{
+    padding-bottom: 1em;
+}
+/* .rr_extra_menu_item {
+    padding-top: 1em;
+    padding-bottom: 1em;
+} */
 .rr_gallery_grid_list {
     margin: 0;
     padding: 0 1em 0 1em;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
     grid-gap: 1em;
 }
 .rr_gallery_grid_list li {
@@ -70,6 +99,10 @@ nav {
     padding-top: 100%;
     position: relative;
     overflow: hidden;
+    transition: all 0.25s ease-in-out;
+}
+.rr_gallery_grid_list li:hover {
+    transform: translateY(0.25em);
 }
 .rr_gallery_grid_list li img {
     width: 100%;
@@ -81,10 +114,14 @@ nav {
     left: 0;
     bottom: 0;
     right: 0;
+    /* transition: all 0.5s ease-in-out; */
 }
+/* .rr_gallery_grid_list li img:hover {
+    transform: scale(1.15);
+} */
 footer {
     font-family: 'Julius Sans One', sans-serif;
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: #333333;
     padding: 5vh 0 3vh 0;
     width: 100%;
@@ -109,7 +146,7 @@ footer ul li a {
     text-transform: lowercase;
 }
 footer p {
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 footer p img {
     width: 15px;
@@ -117,7 +154,11 @@ footer p img {
 footer p a {
     color: #333333;
 }
-@media only screen and (max-width: 1000px) {}
+@media only screen and (max-width: 847px) {
+    .rr_gallery_grid_list {
+        grid-template-columns: 1fr;
+    }
+}
 @media only screen and (max-width: 768px) {
     footer {
         width: 85%;
