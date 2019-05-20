@@ -154,7 +154,8 @@ footer p img {
 footer p a {
     color: #333333;
 }
-@media only screen and (max-width: 847px) {
+/* @media only screen and (max-width: 847px) { */
+@media only screen and (max-width: 992px) {
     .rr_gallery_grid_list {
         grid-template-columns: 1fr;
     }
