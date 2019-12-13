@@ -3,7 +3,7 @@ window.onload = function () {
     /* ####### - Function add current year to Copyright - ###### */
     /* --------------------------------------------------------- */
     var year = new Date();
-    document.getElementById("copyright").innerHTML = "Copyright &copy; <em>" + year.getFullYear() + " Robin Rehbein</em> - All rights reserved.";    
+    document.getElementById("copyright").innerHTML = "Copyright &copy; <em>" + year.getFullYear() + " <a href=\"http://robinrehbein.de\">Robin Rehbein</a></em> - All rights reserved.";    
 
     /* --------------------------------------------------------- */
     /* ############# - Function Lazy Load Images - ############# */
@@ -61,5 +61,9 @@ window.onload = function () {
     document.getElementById("mobile-nav").addEventListener("click", function () {
         document.getElementById("mobile-nav").classList.toggle("active");
         document.getElementById("nav-list").classList.toggle("active");
+        // var navListItems = document.getElementsByClassName("nav-list-item");
+        // Array.from(navListItems).forEach(element => element.classList.toggle("active"));
+        Array.from(document.getElementsByClassName("nav-list-item")).forEach(element => element.classList.toggle("active"));
+
     })
 }
