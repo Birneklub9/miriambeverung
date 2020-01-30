@@ -1,0 +1,200 @@
+<!-- Family Book -->
+<!doctype html>
+<html>
+<head>
+    <title>Miriam Beverung - Photography</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+    <header>
+        <div id="header-wrapper">
+            <div id="logo">
+                <a href="index.html">Miriam Beverung - Photography</a>
+            </div>
+            <div id="nav-wrapper">
+                <nav id="nav">
+                    <ul id="nav-list">
+                        <li class="nav-list-item"><a href="index.html">Family Book</a></li>
+                        <li class="nav-list-item"><a href="fashion.html">Fashion Book</a></li>
+                        <li class="nav-list-item"><a href="wedding.html">Wedding Book</a></li>
+                        <li class="nav-list-item"><a href="portrait.html">Portrait Book</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="nav-extra">
+                <p><a href="">+ Extra</a></p>
+            </div>
+            <div id="mobile-nav">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- <aside id="aside">
+            <ul id="aside-list">
+                <li class="aside-list-item"><a href="#">Family Book</a></li>
+                <li class="aside-list-item"><a href="#">Fashion Book</a></li>
+                <li class="aside-list-item"><a href="#">Weeding Book</a></li>
+                <li class="aside-list-item"><a href="#">Portrait Book</a></li>
+            </ul>
+        </aside> -->
+        <!-- <section></section> -->
+        <!-- https://picsum.photos/640/360 -->
+        <div id="gallery-wrapper">
+            <ul id="gallery">
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/SM5A9256.jpg" 
+                                               data-src="img/optimized/preview/family_book/SM5A9256.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/IMG_8262.jpg" 
+                                               data-src="img/optimized/preview/family_book/IMG_8262.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/SM5A9316.jpg" 
+                                               data-src="img/optimized/preview/family_book/SM5A9316.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/IMG_7768.jpg" 
+                                               data-src="img/optimized/preview/family_book/IMG_7768.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/SM5A9920.jpg" 
+                                               data-src="img/optimized/preview/family_book/SM5A9920.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/SM5A0177.jpg" 
+                                               data-src="img/optimized/preview/family_book/SM5A0177.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/IMG_8244.jpg" 
+                                               data-src="img/optimized/preview/family_book/IMG_8244.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/SM5A9830.jpg" 
+                                               data-src="img/optimized/preview/family_book/SM5A9830.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/IMG_8671.jpg" 
+                                               data-src="img/optimized/preview/family_book/IMG_8671.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/SM5A9755.jpg" 
+                                               data-src="img/optimized/preview/family_book/SM5A9755.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/SM5A0244.jpg" 
+                                               data-src="img/optimized/preview/family_book/SM5A0244.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/SM5A9669.jpg" 
+                                               data-src="img/optimized/preview/family_book/SM5A9669.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/SM5A7051.jpg" 
+                                               data-src="img/optimized/preview/family_book/SM5A7051.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/SM5A0338.jpg" 
+                                               data-src="img/optimized/preview/family_book/SM5A0338.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/SM5A9572.jpg" 
+                                               data-src="img/optimized/preview/family_book/SM5A9572.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/SM5A1707.jpg" 
+                                               data-src="img/optimized/preview/family_book/SM5A1707.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/SM5A2467.jpg"
+                                               data-src="img/optimized/preview/family_book/SM5A2467.jpg"
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/SM5A9483.jpg" 
+                                               data-src="img/optimized/preview/family_book/SM5A9483.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+                <li class="gallery-item">
+                    <a href="">
+                        <img class="lazy-load" src="img/optimized/thumbnail/family_book/SM5A9370.jpg" 
+                                               data-src="img/optimized/preview/family_book/SM5A9370.jpg" 
+                                               alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="/legal/html/imprint.html">Imprint</a></li>
+            <!-- <li><a href="">Data Protection</a></li>
+            <li><a href="">Disclaimer</a></li> -->
+        </ul>
+        <p>Made with <img src="img/love.svg" alt="Love"> by <a href="http://robinrehbein.de">Robin Rehbein</a></p>
+        <p id="copyright">Copyright &copy; <em>2019 <a href="http://robinrehbein.de">Robin Rehbein</a></em> - All rights reserved.</p>
+    </footer>
+</body>
+</html>
